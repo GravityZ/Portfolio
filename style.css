@@ -8,6 +8,7 @@
 
 body{
     background:linear-gradient(90deg, #333333, #000000);
+    position: relative;
 }
 
 
@@ -21,11 +22,17 @@ body::-webkit-scrollbar-thumb{
     border-radius: 5px;
 }
 
+header{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .nav-flex{
     display: flex;
     justify-content: space-between;
-    padding: 30px 40px;
+    padding:20px 40px;
 }
 
 
@@ -100,9 +107,13 @@ h1{
     display: flex;
     list-style: none;
     justify-content: center;
+    position: absolute; 
+    bottom: 0;   
+    width: 100%;
 }
 
 .img-con img{
     margin:0px 20px;
     width: 35px;
+    
 }
